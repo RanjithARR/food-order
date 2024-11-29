@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="filter.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="payment.html">Payment</a>
+        <a href="orderhistory.html">Orderhistory</a>
+    </nav>
+
+    <!-- Food Categories -->
+    <h1>Food Menu</h1>
+    <select id="food-category">
+        <option value="all">All</option>
+        <option value="veg">Vegetarian</option>
+        <option value="non-veg">Non-Vegetarian</option>
+    </select>
+
+    <!-- Food Items -->
+    <div id="food-items">
+        <!-- Sample Menu Items -->
+        <div class="food-item" data-category="veg">
+            <img src="Images/veg.jpg" alt="Veg Biryani">
+            <p>Veg Biryani - 8</p>
+            <button class="add-to-cart" data-item="Veg Biryani" data-price="8">Add to Cart</button>
+        </div>
+        <div class="food-item" data-category="non-veg">
+            <img src="Images/nonveg.jpg" alt="Chicken Curry">
+            <p>Chicken Curry - 12</p>
+            <button class="add-to-cart" data-item="Chicken Curry" data-price="12">Add to Cart</button>
+        </div>
+        <!-- Add more items similarly -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="filter.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="payment.html">Payment</a>
+        <a href="orderhistory.html">Orderhistory</a>
+    </nav>
+
+    <h1>Payment</h1>
+    <div id="cart-summary">
+        <!-- Cart items will be displayed here -->
+    </div>
+    <form id="payment-form">
+        <input type="text" placeholder="Card Number" required>
+        <input type="text" placeholder="Name on Card" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <button type="submit">Pay</button>
+
+        <div id="response-message"></div>
+
+    </form>
+    <script src="payment.js" defer></script>
+
+</body>
+</html>

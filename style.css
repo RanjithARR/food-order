@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #a7f960;
+    background-image: image-set("images/order.avif");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+h2 {
+    color: #333;
+}
+h1 {
+    color: orange;
+}
+p {
+    color: #a7f960;
+
+}
+ul {
+    color: #a7f960;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+nav a:hover { 
+    text-decoration: underline;
+}
